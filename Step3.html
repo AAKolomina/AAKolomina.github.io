@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles\style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Step 3</title>
+  </head>
+  <body style="background-color: whitesmoke">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="container bg-white pt-3 pb-5" style="border-radius: 5%">
+            <div class="row pt-3 pb-4">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <div class="position-relative m-4">
+                  <div class="progress" style="height: 3px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 100%; background-color: rgb(105, 57, 209)"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-0 translate-middle btn btn-sm rounded-pill"
+                    style="
+                      width: 1rem;
+                      height: 1rem;
+                      background-color: rgb(105, 57, 209);
+                      padding: 0;
+                      margin: 0;
+                    "
+                  >
+                    <div
+                      style="width: 1rem; height: 0.8rem; padding: 0; margin: 0"
+                    >
+                      <svg
+                        width="1.4rem"
+                        height="1.4rem"
+                        style="
+                          fill: white;
+                          margin: 0;
+                          padding-bottom: 0.5em;
+                          padding-right: 0.4em;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 120 120"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <path
+                          d="m95.118,21.399l-8.517-8.517c-1.179-1.179-3.078-1.179-4.257,0l-43.545,45.972-24.96-24.972c-1.191-1.191-3.123-1.191-4.314,0l-8.628,8.634c-1.191,1.188-1.191,3.12 0,4.314l35.499,36.324c.687,.69 1.62,.927 2.517,.81 .927,.138 1.893-.096 2.604-.81l53.601-57.495c1.176-1.176 1.176-3.084 0-4.26z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="mt-1" style="color: rgb(105, 57, 209)">1</div>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill"
+                    style="
+                      width: 1rem;
+                      height: 1rem;
+                      padding: 0;
+                      margin: 0;
+                      background-color: rgb(105, 57, 209);
+                    "
+                  >
+                  <div
+                  style="width: 1rem; height: 0.8rem; padding: 0; margin: 0"
+                >
+                  <svg
+                    width="1.4rem"
+                    height="1.4rem"
+                    style="
+                      fill: white;
+                      margin: 0;
+                      padding-bottom: 0.5em;
+                      padding-right: 0.4em;
+                    "
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 120 120"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="m95.118,21.399l-8.517-8.517c-1.179-1.179-3.078-1.179-4.257,0l-43.545,45.972-24.96-24.972c-1.191-1.191-3.123-1.191-4.314,0l-8.628,8.634c-1.191,1.188-1.191,3.12 0,4.314l35.499,36.324c.687,.69 1.62,.927 2.517,.81 .927,.138 1.893-.096 2.604-.81l53.601-57.495c1.176-1.176 1.176-3.084 0-4.26z"
+                    />
+                  </svg>
+                </div>
+                    <div class="mt-2 text-secondary">2</div>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                    style="width: 1rem; height: 1rem; padding: 0; margin: 0;background-color: rgb(105, 57, 209);"
+                  >
+                    <div
+                      style="
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        background-color: rgb(248, 248, 248);
+                        border-radius: 50%;
+                        margin-left: 0.25rem;
+                        margin-top: 0.25rem;
+                      "
+                    ></div>
+                    <div class="mt-2 text-secondary">3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 pb-5">
+                <div class="col-1"></div>
+                <form class="col-10" id = "myForm">
+                    <label for="formGroupExampleInput" class="form-label mt">
+                        About
+                  </label>
+                  <textarea id = "field-about" class="form-control" placeholder="Placeholder"></textarea>
+                </form>
+            </div>
+            <div class="row mt-5 pb-4">
+                <div class="col-1"></div>
+                <div class="col-8">
+                  <button
+                    type="button"
+                    class="btn"
+                    style="border-color: rgb(105, 57, 209)"
+                    id="button-back"
+                    onclick="document.location= 'Step2.html'"
+                  >
+                    Назад
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button
+                    type="submit"
+                    class="btn"
+                    style="background-color: rgb(105, 57, 209); color: whitesmoke"
+                    id="button-send"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </div>
+           </div>
+      </div>
+    </div>
+    <script>
+        window.addEventListener( "load", function () {
+        function sendData() {
+          const XHR = new XMLHttpRequest();
+          const FD = new FormData(form);
+          XHR.addEventListener( "load", function(event) {
+            alert( event.target.responseText );
+          } );
+          XHR.addEventListener( "error", function( event ) {
+            alert( 'Oops! Something went wrong.' );
+          } );
+          XHR.open( "POST", "https://api.sbercloud.ru/content/v1/bootcamp/frontend" );
+          XHR.send( FD );
+        }
+      
+        // Access the form element...
+        const form = document.getElementById( "myForm" );
+      
+        // ...and take over its submit event.
+        form.addEventListener( "submit", function ( event ) {
+          event.preventDefault();
+      
+          sendData();
+          alert( 'Oops!' );
+        } );
+      } );
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll("textarea").forEach(function (e) {
+            if (e.value === "")
+              e.value = window.sessionStorage.getItem(e.name, e.value);
+            e.addEventListener("input", function () {
+              window.sessionStorage.setItem(e.name, e.value);
+            });
+          });
+        });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

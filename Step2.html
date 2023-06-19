@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles\style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Step 2</title>
+  </head>
+  <body style="background-color: whitesmoke">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="container bg-white pt-3 pb-5" style="border-radius: 5%">
+            <div class="row pt-3 pb-4">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <div class="position-relative m-4">
+                  <div class="progress" style="height: 3px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 50%; background-color: rgb(105, 57, 209)"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-0 translate-middle btn btn-sm rounded-pill"
+                    style="
+                      width: 1rem;
+                      height: 1rem;
+                      background-color: rgb(105, 57, 209);
+                      padding: 0;
+                      margin: 0;
+                    "
+                  >
+                    <div
+                      style="width: 1rem; height: 0.8rem; padding: 0; margin: 0"
+                    >
+                      <svg
+                        width="1.4rem"
+                        height="1.4rem"
+                        style="
+                          fill: white;
+                          margin: 0;
+                          padding-bottom: 0.5em;
+                          padding-right: 0.4em;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 120 120"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <path
+                          d="m95.118,21.399l-8.517-8.517c-1.179-1.179-3.078-1.179-4.257,0l-43.545,45.972-24.96-24.972c-1.191-1.191-3.123-1.191-4.314,0l-8.628,8.634c-1.191,1.188-1.191,3.12 0,4.314l35.499,36.324c.687,.69 1.62,.927 2.517,.81 .927,.138 1.893-.096 2.604-.81l53.601-57.495c1.176-1.176 1.176-3.084 0-4.26z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="mt-1" style="color: rgb(105, 57, 209)">1</div>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill"
+                    style="
+                      width: 1rem;
+                      height: 1rem;
+                      padding: 0;
+                      margin: 0;
+                      background-color: rgb(105, 57, 209);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        background-color: rgb(248, 248, 248);
+                        border-radius: 50%;
+                        margin-left: 0.25rem;
+                        margin-top: 0.25rem;
+                      "
+                    ></div>
+                    <div class="mt-2 text-secondary">2</div>
+                  </div>
+                  <div
+                    class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                    style="width: 1rem; height: 1rem; padding: 0; margin: 0"
+                  >
+                    <div
+                      style="
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        border-radius: 50%;
+                        margin-left: 0.25rem;
+                        margin-top: 0.25rem;
+                      "
+                    ></div>
+                    <div class="mt-2 text-secondary">3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-1"></div>
+              <div class="col-5" id="advatages">
+                <label for="formGroupExampleInput" class="form-label mt"
+                  >Advatages</label
+                >
+                <div class="input-group" id = "input-group-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="field-advantages-1"
+                    name = "field-advantages-1"
+                    placeholder="Placeholder"
+                    style="display: inline"
+                  />
+                  <svg
+                    id="button-remove-1"
+                    onclick="remove(this.id)"
+                    type="button"
+                    style="
+                      fill: rgb(202, 202, 202);
+                      margin-left: 0.9em;
+                      margin-top: 0.4em;
+                    "
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="25px"
+                    height="25px"
+                  >
+                    <path
+                      d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"
+                    />
+                  </svg>
+                </div>
+                <div class="input-group mt-2" id = "input-group-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="field-advantages-2"
+                    name = "field-advantages-2"
+                    placeholder="Placeholder"
+                    style="display: inline"
+                  />
+                  <svg
+                    id="button-remove-2"
+                    onclick="remove(this.id)"
+                    type="button"
+                    style="
+                      fill: rgb(202, 202, 202);
+                      margin-left: 0.9em;
+                      margin-top: 0.4em;
+                    "
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="25px"
+                    height="25px"
+                  >
+                    <path
+                      d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"
+                    />
+                  </svg>
+                </div>
+                <div class="input-group mt-2" id = "input-group-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="field-advantages-3"
+                    name = "field-advantages-3"
+                    placeholder="Placeholder"
+                    style="display: inline"
+                  />
+                  <svg
+                    id="button-remove-3"
+                    type="button"
+                    onclick="remove(this.id)"
+                    style="
+                      fill: rgb(202, 202, 202);
+                      margin-left: 0.9em;
+                      margin-top: 0.4em;
+                    "
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="25px"
+                    height="25px"
+                  >
+                    <path
+                      d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"
+                    />
+                  </svg>
+                </div>
+                <button
+                  type="button"
+                  class="btn mt-2"
+                  style="
+                    border-color: rgb(105, 57, 209);
+                    color: rgb(105, 57, 209);
+                    font-size: large;
+                    font-weight: bold;
+                  "
+                  id="button-add"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-1"></div>
+              <div class="col-5">
+                <label for="formGroupExampleInput" class="form-label mt"
+                  >Checkbox group
+                </label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    name="field-checkbox-group-option-1"
+                    type="checkbox"
+                    value=""
+                    id="field-checkbox-group-option-1"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    1
+                  </label>
+                </div>
+                <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="field-checkbox-group-option-2"
+                      type="checkbox"
+                      value=""
+                      id="field-checkbox-group-option-2"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="field-checkbox-group-option-3"
+                      type="checkbox"
+                      value=""
+                      id="field-checkbox-group-option-3"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      3
+                    </label>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-1"></div>
+                <div class="col-5">
+                  <label for="formGroupExampleInput" class="form-label mt"
+                    >Radio group
+                  </label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="field-radio-group-option-1"
+                      type="radio"
+                      value=""
+                      id="field-radio-group-option-1"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        name="field-radio-group-option-2"
+                        type="radio"
+                        value=""
+                        id="field-radio-group-option-2"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2
+                      </label>
+                  </div>
+                  <div class="form-check" >
+                      <input
+                        class="form-check-input"
+                        name="field-radio-group-option-3"
+                        type="radio"
+                        id="field-radio-group-option-3"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3
+                      </label>
+                  </div>
+              </div>
+            <div class="row mt-5">
+              <div class="col-1"></div>
+              <div class="col-8">
+                <button
+                  type="button"
+                  class="btn"
+                  style="border-color: rgb(105, 57, 209)"
+                  id="button-back"
+                  onclick="document.location= 'Step1.html'"
+                >
+                  Назад
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn"
+                  style="background-color: rgb(105, 57, 209); color: whitesmoke"
+                  id="button-back"
+                  onclick="document.location= 'Step3.html'"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll("input").forEach(function (e) {
+            if (e.value === "")
+              e.value = window.sessionStorage.getItem(e.name, e.value);
+            e.addEventListener("input", function () {
+              window.sessionStorage.setItem(e.name, e.value);
+            });
+          });
+        });
+        
+    </script>
+    <script> 
+        function save() {	
+          for(let i = 1; i <= 3; i++){
+            var new_id1 = "field-checkbox-group-option-"+String(i);
+        	var checkbox = document.getElementById(new_id1);
+            localStorage.setItem(new_id1, checkbox.checked);	
+          }
+          for(let i = 1; i <= 3; i++){
+            var new_id2 = "field-radio-group-option-"+String(i);
+        	var checkbox = document.getElementById(new_id2);
+            localStorage.setItem(new_id2, checkbox.checked);	
+          }
+        }
+        for(let i = 1; i <= 3; i++){
+          if(localStorage.length > 0){
+            var checked = JSON.parse(localStorage.getItem("field-checkbox-group-option-"+String(i)));
+            var new_id = "field-checkbox-group-option-"+String(i);
+            document.getElementById(new_id).checked = checked;
+          }
+        }
+        for(let i = 1; i <= 3; i++){
+          if(localStorage.length > 0){
+            var checked = JSON.parse(localStorage.getItem("field-radio-group-option-"+String(i)));
+            var new_id = "field-radio-group-option-"+String(i);
+            document.getElementById(new_id).checked = checked;
+          }
+        }
+        window.addEventListener('change', save);
+    </script>
+    <script>
+        const of = document.querySelector('button')
+        document.querySelector('#button-add').addEventListener('click', e => {
+          var new_id  = document.getElementById("advatages").querySelectorAll('svg').length+1;
+          const html = `
+          <div class="input-group mt-2" id = "input-group-">
+              <input
+                type="text"
+                class="form-control"
+                id="field-advantages-"
+                name = "field-advantages-"
+                placeholder="Placeholder"
+                style="display: inline"
+              />
+              <svg
+                id="button-remove-"
+                type="button"
+                onclick="remove(this.id)"
+                style="
+                  fill: rgb(202, 202, 202);
+                  margin-left: 0.9em;
+                  margin-top: 0.4em;
+                "
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="25px"
+                height="25px"
+              >
+                <path
+                  d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"
+                />
+              </svg>
+            </div>
+          `
+          of.insertAdjacentHTML('beforebegin', html)
+          var blockDiv = document.getElementById('input-group-'); 
+          var blockInput = document.getElementById('field-advantages-');
+          var button = document.getElementById('button-remove-');
+          blockDiv.id = blockDiv.id + String(new_id);
+          blockInput.id = blockInput.id + String(new_id);
+          blockInput.name = blockInput.name + String(new_id);
+          button.id = button.id + String(new_id);
+        })
+        function remove(el) {
+            const id = document.getElementById(el).parentElement.id;
+            document.getElementById(id).remove();
+        }
+    </script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
